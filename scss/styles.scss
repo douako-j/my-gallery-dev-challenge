@@ -5,18 +5,128 @@
 
 /*=============== Main Container ===============*/
 .main__container {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  padding: 3rem 1.2rem 2.4rem 1.2rem;
+
+  @include xl {
+    padding: 6rem 24.2rem 2.4rem 23.8rem;
+  }
 }
 
 /*=============== Header ===============*/
 .header {
+  margin-bottom: 3.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 10.176rem;
+      height: 10.176rem;
+      border-radius: 1.6rem;
+      margin-bottom: 1.1rem;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      line-height: 1.7rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.2rem;
+      font-weight: 600;
+      color: #a9a9a9;
+    }
+  }
+
+  .stats {
+    width: 100%;
+    .stats__list {
+      display: flex;
+      justify-content: center;
+      column-gap: 1.2rem;
+
+      .stat {
+        width: 9.088rem;
+        text-align: center;
+        padding: 1.5rem;
+        border-radius: 1.2rem;
+        background-color: var(--light-gray-color);
+
+        h3 {
+          font-size: 1.2rem;
+          line-height: 1.5rem;
+          font-weight: 600;
+        }
+
+        p {
+          color: var(--gray-color);
+          font-size: 1.2rem;
+          line-height: 1.5rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
 }
 
 /*=============== Main ===============*/
 .main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  grid-template-areas:
+    "img-1 img-2 img-2"
+    "img-3 img-3 img-4"
+    "img-5 img-6 img-4";
+
+  img {
+    width: 100%;
+    border-radius: 12px;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.15));
+  }
+
+  .img-1 {
+    grid-area: img-1;
+  }
+
+  .img-2 {
+    grid-area: img-2;
+  }
+
+  .img-3 {
+    grid-area: img-3;
+  }
+
+  .img-4 {
+    grid-area: img-4;
+  }
+
+  .img-5 {
+    grid-area: img-5;
+  }
+
+  .img-6 {
+    grid-area: img-6;
+  }
 }
 
 /*=============== Footer ===============*/
 footer {
+  margin-top: 5.5rem;
   text-align: center;
   color: #bdbdbd;
   font-size: 1.4rem;
