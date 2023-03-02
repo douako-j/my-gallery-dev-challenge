@@ -1,0 +1,29 @@
+{
+  "name": "my-gallery-dev-challenge",
+  "version": "1.0.0",
+  "description": "Fifth challenge of the Responsive Web developer path on devchallenges.io",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douako-j/my-gallery-dev-challenge.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SCSS",
+    "RESPONSIVE",
+    "MOBILE-FIRST"
+  ],
+  "author": "Jordan DOUAKOUTCHE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/douako-j/my-gallery-dev-challenge/issues"
+  },
+  "homepage": "https://github.com/douako-j/my-gallery-dev-challenge#readme",
+  "dependencies": {
+    "sass": "^1.58.3"
+  }
+}
